@@ -24,7 +24,6 @@ async def get_student(student_id: int) -> dict:
     except Exception as e:
         return {"error": str(e)}
 
-
 # ------------------------------------------------------
 # ➕ ADD NEW STUDENT
 # ------------------------------------------------------
@@ -44,7 +43,6 @@ async def add_student(data: dict) -> dict:
 
     except Exception as e:
         return {"error": str(e)}
-
 
 # ------------------------------------------------------
 # ✏ UPDATE STUDENT (EDIT)
@@ -66,13 +64,14 @@ async def update_student(student_id: int, data: dict) -> dict:
     except Exception as e:
         return {"error": str(e)}
 
-
 # ------------------------------------------------------
 # MAIN
 # ------------------------------------------------------
 def main():
-    mcp.run(transport="stdio")
-
+    mcp.run(transport="http",
+            host="0.0.0.0",
+            port=8001,
+            )
 
 if __name__ == "__main__":
     main()
