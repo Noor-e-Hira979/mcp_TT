@@ -2,7 +2,4 @@ anyio>=4.0.0
 uvicorn
 python-dotenv
 mcp
-mcp-fastapi
 fastapi
-uvicorn
-httpx
