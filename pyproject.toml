@@ -1,0 +1,7 @@
+[project]
+name = "student-mcp-server"
+version = "0.1.0"
+dependencies = ["fastmcp"]
+
+[project.scripts]
+student-mcp-server = "server:main"
