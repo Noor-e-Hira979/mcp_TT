@@ -3,7 +3,7 @@ from mcp.server.fastmcp import FastMCP
 import httpx
 
 # 🔗 Your FastAPI backend
-BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://backendtt-production.up.railway.app/"
 
 # ---------------------------------------------------
 # Create FastAPI app
